@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=11;  //declaring value of i
+    int *iptr; //creating a pointer
+    iptr=&i; //giving the address of i variable in pointer
+    
+    cout<<i<<endl;  //printing value of i
+    cout<<iptr<<endl;  //printing value of iptr i.e address of variable i
+    cout<<*iptr<<endl; //printing the value of *iptr i.e is value of i
+    *iptr=90;  //again declaring variable of i using pointer 
+    
+    cout<<*iptr<<endl;  //printing the *iptr i.e value of i(updated value)
+    
+    return 0;
+}
+
+
+OUTPUT:
+
+
+11
+0x7ffe2748ee0c
+11
+90
